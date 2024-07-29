@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Slideshow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+        }
+
+        .testimonial {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .author {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .fade {
+            animation: fade 16s infinite;
+        }
+
+        @keyframes fade {
+            0% { opacity: 1; }
+            12.5% { opacity: 1; }
+            25% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        .testimonial:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .testimonial:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .testimonial:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        .testimonial:nth-child(4) {
+            animation-delay: 12s;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="testimonial fade">
+            <p>"DevsOperative engaged Tyler to help us produce a series of promotional videos for our social media networks. With our basic familiarity with video production, Tyler did an exceptional job guiding us through the process. He helped us understand lighting, fine-tune settings for shooting with an iPhone, add depth of field to our shots, and plan our scripts. Tyler's personal 1:1 coaching sessions made a significant impact on our development."</p>
+            <p class="author">- Dan McCracken, C.O.O. of DevsOperative</p>
+        </div>
+        <div class="testimonial fade">
+            <p>"My video production work demands precision and efficiency, and Tyler's consultation proved to be incredibly valuable. As a designer put in a new position as videographer, I reached out to Tyler for technical advice to help deliver my employer high quality content. Our hour-long session was enlightening; Tyler offered insightful advice tailored to my specific needs, which greatly streamlined my filming process. His technical advice not only improved the quality of my footage but also provided context that made communicating with my employer much more effective. I'm grateful for the practical guidance and personalized support I received, which undoubtedly elevated my projects. Thanks, Tyler!"</p>
+            <p class="author">- Anna Brooks, Lead Graphic Designer, Anatomical Worldwide</p>
+        </div>
+        <div class="testimonial fade">
+            <p>"We were about to drop a bunch of money on equipment (that we wouldn't know how to use) hoping to get a better shot. In a few short sessions, Tyler was able to guide us through making the most out of what we already had. Now we have the confidence to set up and shoot anytime we want and our videos look great!"</p>
+            <p class="author">- Sam Delamarter, C.P.O. DevsOperative</p>
+        </div>
+        <div class="testimonial fade">
+            <p>"Tyler's expertise has been invaluable in improving our video production process. His guidance in reading and delivering lines helped me understand the flow of the video, ensuring smooth transitions and a cohesive final product. His one-on-one sessions provided insights that significantly enhanced our scripting and overall presentation. Tyler's ability to break down complex concepts into easily understandable steps made the entire process much more manageable. I highly recommend his consulting services to anyone looking to elevate their video production quality."</p>
+            <p class="author">- Dan Mikita, C.E.O. DevsOperative</p>
+        </div>
+    </div>
+</body>
+</html>
